@@ -1,5 +1,177 @@
+:root {
+    --sm: 1.6rem;
+    --md: 2.6rem;
+    --lg: 3.5rem;
+    --background_color:  #91C8E4;
+    --color_2: #F6F4EB;
+    --color_1: #4682A9;
+    --text_color_dark: black;
+    --text_color_light: white;
+
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: x-small;
+}
+
+h1 {
+    font-size: var(--lg);
+}
+
+h2 {
+    font-size: var(--md);
+}
+
+p,
+input,
+a,
+h3 {
+    font-size: var(--sm);
+}
+
+header,
+main,
+.skills,
+.contact,
+.footer,
+{
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+header > .header__container,
+main > .main__container,
+.skills > .skills__container,
+.skills > .skills__container > .skills__skill,
+.contact >.contact__container,
+.footer >.footer__container
+{
+    width: 90dvw;
+    padding: 6px;
+}
+
+body,
+header > .header__container,
+main > .main__container,
+.skills > .skills__container,
+.contact > .contact__container,
+.footer >.footer__container
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 body {
-    height: 100%;
-    width: 100%;
-    background-color: blue;
+    background-color: var(--background_color) ;
+    /* gap: 20px; */
+}
+
+
+.contact > .contact__container {
+    background-color: var(--color_2);
+    color: var(--text_color_dark);
+    gap: 7px;
+}
+
+.contact > .contact__container input {
+    color: var(--text_color_light);
+    background-color: var(--color_1);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 16px;
+}
+
+header > .header__container {
+    background-color: var(--color_1);
+    color: var(--text_color_light);
+}
+
+
+main > .main__container {
+    background-color: var(--color_2);
+    color: var(--text_color_dark);
+    gap: 10px;
+}
+
+main > .main__container >img {
+    border-radius: 50%;
+}
+.skills .skills__container {
+    row-gap: 30px;
+    background-color: var(--color_2);
+    color: var(--text_color_dark);
+}
+.skills .skills__container .skills__skill {
+    display: flex;
+    justify-content: center;
+}
+
+
+.skills >.skills__container >.skills__skill>.image__container {
+    flex: 1;
+}
+
+.skills >.skills__container >.skills__skill>.text__container {
+    flex: 2;
+}
+.skills >.skills__container >.skills__skill>.text__container p {
+    line-height: 3rem;
+    width: 90%;
+}
+
+.skills >.skills__container >.skills__skill> div >img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer >.footer__container{
+    gap: 20px;
+    background-color: var(--color_1);
+    color: var(--text_color_light);
+}
+.footer >.footer__container > ul{
+    margin-top: 5px;
+    width: inherit;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer >.footer__container > ul> li{
+    text-align: center;
+}
+
+.footer >.footer__container > ul> li>a{
+    text-decoration: none;
+    color: var(--text_color_light);
+}
+
+
+.footer >.footer__container > ul> li>a:link,
+ .footer >.footer__container > ul> li>a:visited{
+    color: var(--text_color_light);
+}
+
+
+@media (min-width:900px) {
+
+header > .header__container,
+main > .main__container,
+.skills > .skills__container,
+ .skills > .skills__container > .skills__skill,
+.contact >.contact__container,
+.footer >.footer__container
+{
+    width: 1000px;
+}
 }

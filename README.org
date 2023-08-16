@@ -1,0 +1,9 @@
+#+title: Readme
+
+* Thanks to:
+
+** Piccing for the city's night photo: https://www.pexels.com/es-es/foto/foto-del-horizonte-de-noche-3075993/
+** Jarmoluk for his image:
+https://pixabay.com/photos/apple-books-classroom-red-apple-256263/
+** Pexels for his image:
+https://pixabay.com/photos/coding-computer-hacker-hacking-1841550/
