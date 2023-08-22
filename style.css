@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
 :root {
     --sm: 1.6rem;
     --md: 2.6rem;
@@ -96,6 +98,14 @@ header > .header__container {
     color: var(--text_color_light);
 }
 
+header > .header__container > h1,
+header > .header__container > p {
+font-family: 'Dancing Script', cursive;
+}
+
+header > .header__container > p {
+font-size: var(--md);
+}
 
 main > .main__container {
     background-color: var(--color_2);
